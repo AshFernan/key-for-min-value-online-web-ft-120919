@@ -1,4 +1,6 @@
-def key_for_min_value {:blake => 10, :ashley => 50, :adam => 17}
+require 'pry'
+
+def key_for_min_value(hash)
   lowest_key = nil
   lowest_value = nil
   hash.each do |k, v|
